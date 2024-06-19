@@ -1,0 +1,30 @@
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; /* Ensure the content does not overflow */
+  position: relative;
+}
+
+.main-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cover the entire area while maintaining aspect ratio */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+body{
+  background-color: #222; /* Dark background color */
+  color: #fff; /* White text color */
+  font-family: Arial, sans-serif; /* Example font family */
+}
+.offcanvas {
+  visibility: hidden;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  background-color: #000; /* Black background color for sidebar */
+  color: #fff; /* White text color for sidebar */
+}
